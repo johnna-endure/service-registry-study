@@ -5,6 +5,8 @@
 
 ### 시작하기
 
+먼저 각 프로젝트의 루트로 이동해 ./gradlew build를 이용해 모두 빌드해주세요.
+
 프로젝트를 클론한뒤 docker-compose.yml 이 존재하는 경로로 이동하세요.  
 
 `docker-compose up -d`
