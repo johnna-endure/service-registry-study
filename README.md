@@ -13,6 +13,15 @@
 
 위 명령어를 이용해 시작할 수 있습니다.
 
+컨테이너가 띄워지면 멤버, 팀서비스의 데이터를 초기화해야됩니다.
+
+`http://localhost:8080/init, http://localhost:8081/init' 
+
+각각 두개의 데이터가 저장됩니다.  
+이제 http://localhost:8080/member/1 or http://localhost:8080/member/2 로 데이터를 확인할 수 있습니다. 
+
+
+
 ### 종료하기
 
 `docker-compose down` 
