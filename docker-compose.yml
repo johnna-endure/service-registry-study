@@ -24,6 +24,8 @@ services:
     ports:
       - 8081:8081
     restart: on-failure
+    environment: 
+      - INSTANCE_INDEX:1
     depends_on: 
       - eureka-server
       - team-db
@@ -33,6 +35,8 @@ services:
     ports:
       - 8082:8081
     restart: on-failure
+    environment: 
+      - INSTANCE_INDEX:2
     depends_on: 
       - eureka-server
       - team-db

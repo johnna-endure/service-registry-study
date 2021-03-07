@@ -1,5 +1,7 @@
 package springboot.cloud.memberservice.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 import springboot.cloud.memberservice.client.TeamDiscoveryClient;
 import springboot.cloud.memberservice.controller.dto.MemberDto;
@@ -26,6 +28,8 @@ public class MemberRestController {
     public MemberDto getMember(@PathVariable("memberId") Long memberId) {
         Member findMember = memberRepository.findById(memberId)
                 .orElseThrow(() -> new NoSuchElementException(memberId+"에 해당하는 회원이 없습니다."));
+
+
 
         MemberDto memberDto = new MemberDto(findMember);
 
